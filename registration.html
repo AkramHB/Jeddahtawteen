@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en"  >
+
+<head>
+  <meta charset="UTF-8">
+  <title> برنامج محافظة جدة لتوطين الوظائف</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+    <style>
+        
+    @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+* {
+    font-family: 'Droid Arabic Kufi', serif !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+        
+        label {
+            color: #466652;
+        }
+
+
+    </style>
+    
+    <link rel="shortcut icon" href="assets/ico/presentation.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/presentation1.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/presentation2.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/presentation3.png">
+  
+</head>
+
+
+<body dir = "rtl" style="font-family: 'Cairo', sans-serif; background-color: #f2eff0;">
+
+    <div>
+        <img class="img-fluid d-none d-md-block" style="padding-bottom: 0em;" src="assets/images/header.jpg" >
+        <img class="img-fluid d--block d-md-none" style="padding-bottom: 0em;" src="assets/images/headermobile.jpg" >
+    </div>
+    
+    <div class="container mt-5">
+        <div class="card card-outline-secondary">
+                            <div class="card-header" style="color: #d8b92b; background-color: #466653;">
+                                <h3 class="mb-0 text-center">المعلومات الشخصية</h3>
+                            </div>
+                            <div class="card-body">
+                                <form class="form" role="form" autocomplete="off" method="post" action="registration-individuals.php">
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="firstname">الاسم الأول</label>
+                                        <div class="col-lg-9">
+                                                <input type="text" class="form-control" name="firstName" required="" id = "txtName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="medianName">الاسم الأوسط</label>
+                                        <div class="col-lg-9">
+                                                <input type="text" class="form-control" name="medianName" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="lastName">اسم العائلة</label>
+                                        <div class="col-lg-9">
+                                                <input type="text" class="form-control" name="lastName" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="gender">الجنس</label>
+                                        <div class="col-lg-9">
+                                            <select class="form-control" name="gender" style="height:40px;" size="0">
+                                                <option value="male">ذكر</option>
+                                                <option value="female">أنثى</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center">تاريخ الميلاد</label>
+                                        <div class="col-lg-3">
+                                            <select  name="day" class="form-control" style="height:40px;">
+                                                 <option value="">اليوم</option><option value="01">1</option>
+                                                 <option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+                                                <option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option>
+                                                <option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option>
+                                                <option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option>
+                                                <option value="31">31</option>
+                                           </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="month" style="height:40px;">
+                                                 <option value="">الشهر</option>
+                                                 <option value="01">يناير</option>
+                                                 <option value="02">فبراير</option>
+                                                 <option value="03">مارس</option>
+                                                 <option value="04">أبريل</option>
+                                                 <option value="05">مايو</option>
+                                                 <option value="06">يونيو</option>
+                                                 <option value="07">يوليو</option>
+                                                 <option value="08">أغسطس</option>
+                                                 <option value="09">سبتمبر</option>
+                                                 <option value="10">أكتوبر</option>
+                                                 <option value="11">نوفمبر</option>
+                                                 <option value="12">ديسمبر</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="year" style="height:40px;">
+                                                <option value="">السنة</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option><option value="1932">1932</option><option value="1931">1931</option><option value="1930">1930</option><option value="1929">1929</option><option value="1928">1928</option><option value="1927">1927</option><option value="1926">1926</option><option value="1925">1925</option><option value="1924">1924</option><option value="1923">1923</option><option value="1922">1922</option><option value="1921">1921</option><option value="1920">1920</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="idnum">رقم الهوية</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" id="idnum" name="idnum" placeholder=" " maxlength="10" required>
+                                        </div>                                        
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="email">البريد الإلكتروني</label>
+                                        <div class="col-lg-9">
+                                                <input type="email" class="form-control" name="email" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="address">العنوان</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" id="address" name="address" placeholder=" المدينة - الحي"   required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="mobile">رقم الجوال</label>
+                                        <div class="col-lg-9">
+                                            <input type="tel" class="form-control" placeholder=" رقم الجوال  - مثال 966540869636" name="mobile" pattern ="[0-9]{3}[0-9]{2}[0-9]{3}[0-9]{4}" required>
+                                        </div>
+                                    </div>
+                                
+                                    </div>
+                            <div class="card-header" style="color: #d8b92b; background-color: #466653;">
+                                <h3 class="mb-0 text-center">المؤهلات والخبرات العلمية</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="edu_country_id">دولة التعليم</label>
+                                        <div class="col-lg-9">
+                                                <select class="form-control" name="edu_country_id">
+                                                    <option value="">اختر البلد</option>
+                                                    <option value="1">افغانستان</option><option value="2">البانيا</option><option value="3">الجزائر</option><option value="187">انغولا</option><option value="4">أنتيغوا</option><option value="5">الارجنتين</option><option value="6">استراليا</option><option value="115">النمسا</option><option value="7">اذربيجان</option><option value="8">البحرين</option><option value="9">بنغلاديش</option><option value="10">بربادوس</option><option value="188">انتيغوا وبربودا</option><option value="11">بلجيكا</option><option value="113">بليز</option><option value="215">البوسنة</option><option value="13">بوتسوانا</option><option value="14">البرازيل</option><option value="15">بروناي</option><option value="16">بلغاريا</option><option value="17">بورما</option><option value="18">الكاميرون</option><option value="116">كندا</option><option value="19">تشاد</option><option value="20">الشيشان</option><option value="21">شيلى</option><option value="22">الصين</option><option value="24">كولومبيا</option><option value="25">الكونغو</option><option value="196">كوستاريكا</option><option value="26">كرواتيا</option><option value="27">قبرص</option><option value="217">جمهورية التشيك</option><option value="194">جمهورية الكونغو الديمقراطية&lrm;</option><option value="29">الدنمارك</option><option value="177">تيمور الشرقية</option><option value="30">مصر</option><option value="31">اريتريا</option><option value="32">اثيوبيا</option><option value="33">فيجي</option><option value="34">فنلندا</option><option value="35">فرنسا</option><option value="36">غامبيا</option><option value="37">المانيا</option><option value="38">غانا</option><option value="39">اليونان</option><option value="40">غينيا</option><option value="41">هونغ كونغ</option><option value="42">المجر</option><option value="43">ايسلندا</option><option value="44">الهند</option><option value="45">اندونيسيا</option><option value="46">ايران</option><option value="47">العراق</option><option value="48">ايرلندا</option><option value="50">ايطاليا</option><option value="51">جامايكا</option><option value="52">اليابان</option><option value="53">الاردن</option><option value="54">كازاخستان</option><option value="55">كينيا</option><option value="56">كوسوفو</option><option value="57">الكويت</option><option value="58">قرغيزستان</option><option value="117">لاوس</option><option value="128">لاتفيا</option><option value="59">لبنان</option><option value="118">ليبيريا</option><option value="60">ليبيا</option><option value="61">مدغشقر</option><option value="62">ملاوي</option><option value="63">ماليزيا</option><option value="122">ملديف</option><option value="64">مالي</option><option value="65">مالطا</option><option value="66">موريتانيا</option><option value="67">موريتانيا</option><option value="68">المكسيك</option><option value="69">المغرب</option><option value="70">موزمبيق</option><option value="71">نيبال</option><option value="72">هولندا</option><option value="73">نيوزيلندا</option><option value="74">النيجر</option><option value="75">نيجيريا</option><option value="76">النرويج</option><option value="77">عمان</option><option value="79">باكستان</option><option value="78">فلسطين</option><option value="173">بابوا غينيا الجديدة</option><option value="80">بيرو</option><option value="81">الفلبين</option><option value="82">بولندا</option><option value="83">البرتغال</option><option value="84">قطر</option><option value="158">رومانيا</option><option value="85">روسيا</option><option value="121">رواندا</option><option value="86" selected="">المملكة العربية السعودية</option><option value="87">السنغال</option><option value="224">صربيا</option><option value="88">سيراليون</option><option value="89">سنغافورة</option><option value="165">سلوفاكيا</option><option value="90">سلوفينيا</option><option value="91">الصومال</option><option value="92">جنوب افريقيا</option><option value="219">كوريا الجنوبية</option><option value="94">اسبانيا</option><option value="95">سري لانكا</option><option value="96">السودان</option><option value="97">السويد</option><option value="98">سويسرا</option><option value="99">سوريا</option><option value="101">تايوان</option><option value="100">طاجيكستان</option><option value="102">تنزانيا</option><option value="103">تايلند</option><option value="104">تونس</option><option value="105">تركيا</option><option value="106">تركمانستان</option><option value="107">اوغندا</option><option value="119">اوكرانيا</option><option value="23">الامارات العربية المتحدة</option><option value="108">المملكه المتحدة</option><option value="114">الولايات المتحدة</option><option value="109">اوزبكستان</option><option value="110">فنزويلا</option><option value="180">فيتنام</option><option value="111">اليمن</option><option value="112">زيمبابوي</option>
+                                             </select>
+                                        </div>
+                                    </div>
+                                <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="uniName">اسم المؤسسة التعليمية</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" name="uniName" required="" id = "uniName">
+                                        </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="degree_level">الدرجة العلمية</label>
+                                        <div class="col-lg-9">
+                                                <select class="form-control" name="degree_level" id="degree_level" style="height:40px;" >
+                                                     <option value="ثانوية وما دون">ثانوية وما دون</option>
+                                                     <option value="دبلوم">دبلوم</option>
+                                                     <option value="بكالوريوس">بكالوريوس</option>
+                                                     <option value="ماجستير">ماجستير</option>
+                                                     <option value="دكتوراه">دكتوراه</option>
+                                                 </select> 
+                                        </div>
+                                    </div>
+                                <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="college">الكلية</label>
+                                        <div class="col-lg-9">
+                                                <select class="form-control" name="college" id="college" style="height:40px;">
+                                                     <option value="كلية التربية">كلية التربية</option>
+                                                     <option value="كلية الطب">كلية الطب</option>
+                                                     <option value="كلية الهندسة">كلية الهندسة</option>
+                                                     <option value="كلية العلوم">كلية العلوم</option>
+                                                     <option value="كلية الحاسبات و تقنية المعلومات">كلية الحاسبات و تقنية المعلومات</option>
+                                                     <option value="كلية العلوم و الاداب">كلية العلوم و الاداب</option>
+                                                     <option value="كلية الأعمال">كلية الأعمال</option>
+                                                     <option value="أخرى" >كلية أخرى</option>
+                                                 </select>
+                                        </div>
+                                    </div>
+                                <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="major_subject">التخصص</label>
+                                        <div class="col-lg-9">
+                                                <select class="form-control" name="major_subject" id="major_subject" style="height:40px;" onchange="myFunction2()">
+                                                         <option value="المحاسبة">المحاسبة</option>
+                                                         <option value="العلوم الطبية الأساسية">العلوم الطبية الأساسية</option>
+                                                         <option value="التقنية الحيوية">التقنية الحيوية</option>
+                                                         <option value="الكيمياء">الكيمياء</option>
+                                                         <option value="الهندسة الكهربائية وهندسة الحاسبات">الهندسة الكهربائية وهندسة الحاسبات</option>
+                                                         <option value="علوم الحاسبات">علوم الحاسبات</option>
+                                                         <option value="الأمن الإلكتروني">الأمن الإلكتروني</option>
+                                                         <option value="إدارة الأعمال التنفيذي">إدارة الأعمال التنفيذي</option>
+                                                         <option value="الثقافة الإسلامية والمهارات اللغوية">الثقافة الإسلامية والمهارات اللغوية</option>
+                                                         <option value="الأحياء الدقيقة">الأحياء الدقيقة</option>
+                                                         <option value="القراءات">القراءات</option>
+                                                         <option value="الدراسات القرآنية">الدراسات القرآنية</option>
+                                                         <option value="العلوم السريرية">العلوم السريرية</option>
+                                                         <option value="مهارات الاتصال">مهارات الاتصال</option>
+                                                         <option value="تقنية المعلومات المؤسسية">تقنية المعلومات المؤسسية</option>
+                                                         <option value="ريادة الأعمال والابداع">ريادة الأعمال والابداع</option>
+                                                         <option value="التمويل والتأمين">التمويل والتأمين</option>
+                                                         <option value="الهندسة الصناعية">الهندسة الصناعية</option>
+                                                         <option value="نظم المعلومات">نظم المعلومات</option>
+                                                         <option value="الرياضيات">الرياضيات</option>
+                                                         <option value="الفيزياء">الفيزياء</option>
+                                                         <option value="التربية الخاصة">التربية الخاصة</option>
+                                                         <option value="التفسير وعلوم القرآن">التفسير وعلوم القرآن</option>
+                                                         <option value="اللغة الإنجليزية والترجمة">اللغة الإنجليزية والترجمة</option>
+                                                         <option value="إدارة الموارد البشرية">إدارة الموارد البشرية</option>
+                                                         <option value="الكيمياء الصناعية">الكيمياء الصناعية</option>
+                                                         <option value="تقنية المعلومات">تقنية المعلومات</option>
+                                                         <option value="تقنيات التعليم">تقنيات التعليم</option>
+                                                         <option value="الرياضيات">الرياضيات</option>
+                                                         <option value="الهندسة الميكانيكية">الهندسة الميكانيكية</option>
+                                                         <option value="نظم المعلومات الإدارية">نظم المعلومات الإدارية</option>
+                                                         <option value="التربية البدنية">التربية البدنية</option>
+                                                         <option value="علوم الأحياء">علوم الأحياء</option>
+                                                         <option value="الهندسة الكيميائية">الهندسة الكيميائية</option>
+                                                         <option value="علم النفس التربوي">علم النفس التربوي</option>
+                                                         <option value="إدارة الخدمات الصحية والمستشفيات">إدارة الخدمات الصحية والمستشفيات</option>
+                                                         <option value="التربية الخاصة">التربية الخاصة</option>
+                                                         <option value="القيادة التربوية">القيادة التربوية</option>
+                                                         <option value="أصول التربية">أصول التربية</option>
+                                                         <option value="القانون">القانون</option>
+                                                         <option value="المناهج وطرائق التدريس">المناهج وطرائق التدريس</option>
+                                                         <option value="أصول التربي">أصول التربية</option>
+                                                         <option value="الموارد البشرية">الموارد البشرية</option>
+                                                         <option value="الإدارة والتخطيط التربوي">الإدارة والتخطيط التربوي</option>
+                                                         <option value="إدارة المعلومات">إدارة المعلومات</option>
+                                                         <option value="التربية البدنية">التربية البدنية</option>
+                                                         <option value="علم النفس التربوي">علم النفس التربوي</option>
+                                                         <option value="تقنيات التعليم">تقنيات التعليم</option>
+                                                         <option value="المناهج وطرق التدريس">المناهج وطرق التدريس</option>
+                                                         <option value="الإدارة الهندسية">الإدارة الهندسية</option>
+                                                         <option value="التسويق">التسويق</option>
+                                                         <option value="اللياقة البدنية">اللياقة البدنية</option>
+                                                         <option value="علم السموم والأدلة الجنائية">علم السموم والأدلة الجنائية</option>
+                                                         <option value="other" >أخرى</option>
+                                                     </select>
+                                        </div>
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="other_major_subject" id = "other_major_subject_label" style = "display: none;">ادخل التخصص</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" name="other_major_subject" id = "other_major_subject" style = "display: none;">
+                                        </div>
+                                    </div>
+                                <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center">تاريخ الحصول على الدرجة العلمية</label>
+                                        <div class="col-lg-3">
+                                            <select  name="degree_day" class="form-control" style="height:40px;">
+                                                <option value="">اليوم</option><option value="01">1</option>
+                                                <option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+                                               <option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option>
+                                               <option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option>
+                                               <option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option>
+                                               <option value="31">31</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="degree_month" style="height:40px;">
+                                                <option value="">الشهر</option>
+                                                <option value="01">يناير</option>
+                                                <option value="02">فبراير</option>
+                                                <option value="03">مارس</option>
+                                                <option value="04">أبريل</option>
+                                                <option value="05">مايو</option>
+                                                <option value="06">يونيو</option>
+                                                <option value="07">يوليو</option>
+                                                <option value="08">أغسطس</option>
+                                                <option value="09">سبتمبر</option>
+                                                <option value="10">أكتوبر</option>
+                                                <option value="11">نوفمبر</option>
+                                                <option value="12">ديسمبر</option>
+                                           </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="degree_year" style="height:40px;">
+                                               <option value="">السنة</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option><option value="1932">1932</option><option value="1931">1931</option><option value="1930">1930</option><option value="1929">1929</option><option value="1928">1928</option><option value="1927">1927</option><option value="1926">1926</option><option value="1925">1925</option><option value="1924">1924</option><option value="1923">1923</option><option value="1922">1922</option><option value="1921">1921</option><option value="1920">1920</option>
+                                           </select>
+                                        </div>
+                                    </div>
+                                <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="total_experience">مجموع الخبرة</label>
+                                        <div class="col-lg-9">
+                                                <select class="form-control" name="total_experience" id="total_experience" style="height:40px;">
+                                                     <option value="خريج">خريج</option>
+                                                     <option value="بلا عمل">بلا عمل</option>
+                                                     <option value="أقل من سنة">أقل من سنة</option>
+                                                     <option value="1">سنة</option>
+                                                     <option value="2">2 سنوات</option>
+                                                     <option value="3">3 سنوات</option>
+                                                     <option value="4">4 سنوات</option>
+                                                     <option value="5">5 سنوات</option>
+                                                     <option value="6">6 سنوات</option>
+                                                     <option value="7">7 سنوات</option>
+                                                     <option value="8">8 سنوات</option>
+                                                     <option value="9">9 سنوات</option>
+                                                     <option value="10">10 سنوات</option>
+                                                     <option value="أكثر من 10 سنوات">أكثر من 10 سنوات</option>
+                                                </select>
+                                        </div> 
+                                    </div>
+                                <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="position">آخر مسمى وظيفي/الحالي</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" name="position" required="" id = "position">
+                                        </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="field">المجال الذي ترغب الإلتحاق به</label>
+                                        <div class="col-lg-9">
+                                                <select class="form-control" id="field" style="height:40px;" name = "field" onchange="myFunction()">
+                                                  <option value = "محلات السيارات والدراجات النارية">محلات السيارات والدراجات النارية</option>
+                                                  <option value = ">محلات الملابس الجاهزة وملابس الأطفال والمسلتزمات الرجالية">>محلات الملابس الجاهزة وملابس الأطفال والمسلتزمات الرجالية</option>
+                                                  <option value = "محلات الأثاث المنزلي والكتبي الجاهز">محلات الأثاث المنزلي والكتبي الجاهز</option>
+                                                  <option value = "محلات الأواني المنزلية">محلات الأواني المنزلية</option>
+                                                  <option value = "محلات الأجهزة الكهربائية والإلكترونية">محلات الأجهزة الكهربائية والإلكترونية</option>
+                                                  <option value = "محلات الساعات">محلات الساعات</option>
+                                                  <option value = "محلات النظارات">محلات النظارات</option>
+                                                  <option value = "محلات الأجهزة والمعدات الطبية">محلات الأجهزة والمعدات الطبية</option>
+                                                  <option value = "محلات مواد الإعمار والبناء">محلات مواد الإعمار والبناء</option>
+                                                  <option value = "محلات قطع غيار السيارات">محلات قطع غيار السيارات</option>
+                                                  <option value = "محلات السجاد بكافة أنواعه">محلات السجاد بكافة أنواعه</option>
+                                                  <option value = "محلات الحلويات">محلات الحلويات</option>
+                                                  <option value = "محلات الذهب">محلات الذهب</option>
+                                                  <option value = "مكاتب ايجار السيارات">مكاتب ايجار السيارات</option>
+                                                  <option value = "محلات الجوالات">محلات الجوالات</option>
+                                                  <option value = "محلات المسلتزمات النسائية">محلات المسلتزمات النسائية</option>
+                                                  <option value = "other">أخرى</option>
+                                                </select>
+                                        </div>
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="other-field" id = "other-field-label" style = "display: none;">ادخل المجال</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" name="other_field" id = "other-field" style = "display: none;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label text-center" for="cv">رفع السيرة الذاتية</label>
+                                        <div class="col-lg-9">
+                                            <label for="cv" class="btn btn-default  dar btn-block" style="background-color: #d8b92b;">اختر الملف</label>
+                                            <input type="file" id="cv" name="cv" class="form-control" style="visibility:hidden">
+                                        </div>
+                                    </div><hr>
+                                <div class="form-group row">
+                                        <div class="col-lg-12 text-center">
+                                            <input type="submit" class="btn btn-lg text-center" style="color: #d8b92b; background-color: #466653;" value = "إرسال">
+                                        </div>
+                                    </div>
+                            </div>
+                                </form>
+                        </div>
+        </div>
+    
+    
+    
+    
+    
+    
+                                
+    
+    
+    
+    
+
+  
+
+      
+
+
+
+      
+    
+
+
+      
+      
+
+
+  
+  <script src='http://code.jquery.com/jquery-2.1.3.js'></script>
+<script src='https://rawgit.com/guillaumepotier/Parsley.js/2.2.0-rc4/dist/parsley.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+        
+        <script>
+            function myFunction (){
+                var ddl = document.getElementById("field");
+                var selectedValue = ddl.options[ddl.selectedIndex].value;
+                    if (selectedValue == "other")
+                        {
+                        document.getElementById('other-field').style.display = 'block';
+                        document.getElementById('other-field-label').style.display = 'block';
+                        } 
+                
+                else 
+                        {
+                        document.getElementById('other-field').style.display = 'none';
+                        document.getElementById('other-field').style.display = 'none';
+                        }     
+            }
+            
+            function myFunction2 (){
+                var ddl = document.getElementById("major_subject");
+                var selectedValue = ddl.options[ddl.selectedIndex].value;
+                    if (selectedValue == "other")
+                        {
+                        document.getElementById('other_major_subject').style.display = 'block';
+                        document.getElementById('other_major_subject_label').style.display = 'block';
+                        } 
+                
+                else 
+                        {
+                        document.getElementById('other_major_subject').style.display = 'none';
+                        document.getElementById('other_major_subject_label').style.display = 'none';
+                        }     
+            }
+        </script>
+
+
+
+</body>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118995358-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118995358-1');
+</script>
+
+</html>
