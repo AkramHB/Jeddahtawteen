@@ -25,10 +25,18 @@
     <title> برنامج محافظة جدة لتوطين الوظائف</title>
     
     <style>
-        * {
-            font-size: 15px;
-        }
-    </style>
+        
+        @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+    * {
+        font-family: 'Droid Arabic Kufi', serif !important;
+        font-size: 16px;
+        font-weight: 600;
+    }
+            
+   
+    
+    
+        </style>
    
 
 
