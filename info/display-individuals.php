@@ -78,7 +78,10 @@
 
             mysqli_query($MySQL_Handle,$sSQL) 
             or die ('Can\'t charset in DataBase');
-            $sql = "SELECT * FROM individuals";
+            $page = 1;
+            $start =  10 * ($page - 1);
+            $rows = 10;
+            $sql = "SELECT * FROM individuals LIMIT $start, $rows";
             $result = $MySQL_Handle->query($sql);
 
             if ($result->num_rows > 0) {
