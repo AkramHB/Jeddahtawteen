@@ -80,7 +80,7 @@ if($link === false){
 
  
 // Escape user inputs for security
-$name = mysqli_real_escape_string($link, $_REQUEST['firstName']) . mysqli_real_escape_string($link, $_REQUEST['medianName']) . mysqli_real_escape_string($link, $_REQUEST['lastName']);
+$name = mysqli_real_escape_string($link, $_REQUEST['firstName']) . ' ' . mysqli_real_escape_string($link, $_REQUEST['medianName']) . ' ' . mysqli_real_escape_string($link, $_REQUEST['lastName']);
 $gender = mysqli_real_escape_string($link, $_REQUEST['gender']);
 $birthdate = mysqli_real_escape_string($link, $_REQUEST['day']) . '/' . mysqli_real_escape_string($link, $_REQUEST['month']) . '/' . mysqli_real_escape_string($link, $_REQUEST['year']);
 $identity = mysqli_real_escape_string($link, $_REQUEST['idnum']);
