@@ -102,12 +102,13 @@ $field = mysqli_real_escape_string($link, $_REQUEST['field']);
 if(strcmp($field,"other") == 0){
     $field = mysqli_real_escape_string($link, $_REQUEST['other_field']);
 }
-$t = md5 (md5(time()));
-$fnm = $_FILES["cv"]["name"];
-$cv = $t.$fnm;
-$dst = "./uploads/".$t.$fnm;
-move_uploaded_file($_FILES["cv"]["tmp_name"], $dst);
 $confirm_code = rand(10000000, 99999999);
+$temp = explode(".", $_FILES["cv"]["name"]);
+$newfilename = $confirm_code . '.' . end($temp);
+$dst = "./uploads/";
+move_uploaded_file($_FILES["cv"]["tmp_name"], $dst . $newfilename);
+$cv = $newfilename;
+
      
 
 if($name == "" || $gender == "" || $birthdate == "" || $identity == "" || $address == "" || $email == "" || $mobile == "" || $edu_country == "" || $edu_institue == "" || $degree == "" || $college == "" || $major == "" || $degree_date == "" || $experience == "" || $position == "" || $field == ""){
