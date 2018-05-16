@@ -103,8 +103,8 @@ if(strcmp($field,"other") == 0){
     $field = mysqli_real_escape_string($link, $_REQUEST['other_field']);
 }
 $t = md5 (md5(time()));
-$cv = $t.mysqli_real_escape_string($link, $_REQUEST['cv']);
 $fnm = $_FILES["cv"]["name"];
+$cv = $t.$fnm;
 $dst = "./uploads/".$t.$fnm;
 move_uploaded_file($_FILES["cv"]["tmp_name"], $dst);
 $confirm_code = rand(10000000, 99999999);
