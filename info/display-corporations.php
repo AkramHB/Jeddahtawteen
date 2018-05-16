@@ -77,7 +77,15 @@
 
             mysqli_query($MySQL_Handle,$sSQL) 
             or die ('Can\'t charset in DataBase');
-            $sql = "SELECT * FROM corporations";
+            if (empty($_GET['page'])) {
+                $page = 1;
+              }
+              else {
+                $page = $_GET['page'];
+              }
+              $items = 20; 
+              $offset = ($page * $items) - $items;
+            $sql = "SELECT * FROM corporations LIMIT $items OFFSET $offset";
             $result = $MySQL_Handle->query($sql);
 
             if ($result->num_rows > 0) {
@@ -117,7 +125,18 @@
             </div>";
 
     ?>
-                                
+      <div class = "container my-5">
+         <div class = "row justify-content-between">
+            <div class = "col-3 order-2">                     
+                <a class = "btn btn-default btn-success" style = "background-color: #466653; color: #d8b92b;" href="display-corporations.php?page=<?php echo $page + 1; ?>">الصفحة التالية</a>
+            </div>
+            <div class = "col-3 order-1">
+                <?php if ($page != 1) { ?>
+                    <a class = "btn btn-default btn-success" style = "background-color: #466653; color: #d8b92b;" href="display-corporations.php?page=<?php echo $page - 1; ?>">الصفحة السابقة</a>
+                <?php } ?>
+            </div>
+        </div>
+     </div>                          
 
     <!-- footer -->
 
