@@ -84,7 +84,7 @@
             if ($result->num_rows > 0) {
 
                 echo "<div class = 'container-fluid text-center mt-5'><table class = 'table table-hover table-responsive text-center'>
-                    <thead class='thead-light'><tr><th scope='col'>ID #</th><th scope='col'>الاسم</th><th scope='col'>الجنس</th><th scope='col'>تاريخ الميلاد</th><th scope='col'>الهوية</th><th scope='col'>العنوان</th><th scope='col'>البريد الإلكتروني</th><th scope='col'>رقم الجوال</th><th scope='col'>دولة التعليم</th><th scope='col'>مؤسسة التعليم</th><th scope='col'>الدرجة العلمية</th><th scope='col'>الكلية</th><th scope='col'>التخصص</th><th scope='col'>تاريخ الحصول على الدرجة العلمية</th><th scope='col'>الخبرة</th><th scope='col'>المسمى الوظيفي</th><th scope='col'>المجال</th><th scope='col'>تفعيل</th></tr></thead>";
+                    <thead class='thead-light'><tr><th scope='col'>ID #</th><th scope='col'>الاسم</th><th scope='col'>الجنس</th><th scope='col'>تاريخ الميلاد</th><th scope='col'>الهوية</th><th scope='col'>العنوان</th><th scope='col'>البريد الإلكتروني</th><th scope='col'>رقم الجوال</th><th scope='col'>دولة التعليم</th><th scope='col'>مؤسسة التعليم</th><th scope='col'>الدرجة العلمية</th><th scope='col'>الكلية</th><th scope='col'>التخصص</th><th scope='col'>تاريخ الحصول على الدرجة العلمية</th><th scope='col'>الخبرة</th><th scope='col'>المسمى الوظيفي</th><th scope='col'>المجال</th><th scope='col'>السيرة الذاتية</th><th scope='col'>تفعيل</th></tr></thead>";
 
                 while($row = $result->fetch_assoc()) {
                     echo "<tr class=''>
@@ -105,6 +105,7 @@
                     <td>" . $row['experience'] . "
                     <td>" . $row['position'] . "
                     <td>" . $row['field'] . "
+                    <td><a class = 'btn btn-default' href = '../uploads/" . $row['cv'] . "'>تحميل </a>  
                     <td>" . $row['activated'] . "
                     </tr>";
                 }
