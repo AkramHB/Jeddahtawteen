@@ -107,6 +107,15 @@ else if(strcmp($vacant_Jobs,"عارض منتجات ومصفف ارفف") == 0){
 else if(strcmp($vacant_Jobs,"مسؤول علاقات عامة") == 0){
     $vacant_Jobs_more_info = mysqli_real_escape_string($link, $_REQUEST['administratorRelInput']);
 }
+else if(strcmp($vacant_Jobs,"أخصائي بصريات") == 0){
+    $vacant_Jobs_more_info = mysqli_real_escape_string($link, $_REQUEST['opticsSpecialist']);
+}
+else if(strcmp($vacant_Jobs,"فني بصريات") == 0){
+    $vacant_Jobs_more_info = mysqli_real_escape_string($link, $_REQUEST['opticsTechnical']);
+}
+else if(strcmp($vacant_Jobs,"بائع بصريات") == 0){
+    $vacant_Jobs_more_info = mysqli_real_escape_string($link, $_REQUEST['opticsSeller']);
+}
 else if(strcmp($vacant_Jobs,"مسؤول إدارة مخزون") == 0){
     $vacant_Jobs_more_info = mysqli_real_escape_string($link, $_REQUEST['administratorManInput']);
 }
