@@ -115,9 +115,20 @@ if($name == "" || $gender == "" || $birthdate == "" || $identity == "" || $addre
               echo "<div class = 'container' style = 'position:absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);'><h3 style = 'color: red;'>حدث خطأ ما، الرجاء التأكد من ادخال جميع البيانات بشكل صحيح</h3></div>";
               die();
               }
+
+        $sql = "SELECT * FROM individuals WHERE identity='$identity' AND email = '$email'";
+        $result = $link->query($sql);
+                  
+        if ($result->num_rows > 0) {
+                  
+            echo "<script>alert('لقد تم تسجيل طلبكم من قبل، شكرًا لكم.');
+        window.location='index.html';
+</script>";
+                  
+         }
     
 
-
+else{
 $sql = "INSERT INTO individuals (name, gender, birthdate, identity, address, email, mobile, edu_country, edu_institute, degree, college, major, degree_date, experience, position, field, cv, confirmation_code) VALUES ('$name', '$gender', '$birthdate', '$identity', '$address', '$email','$mobile', '$edu_country', '$edu_institue', '$degree', '$college', '$major', '$degree_date', '$experience', '$position', '$field', '$cv', '$confirm_code')";
 
 
@@ -193,18 +204,20 @@ if(mysqli_query($link, $sql)){
         // دالة الإرسال
         sendSMS($myMobile, $password, $numbers, $sender, $msg, $MsgID, $timeSend, $dateSend, $deleteKey, $resultType);
 
+        echo "<script>alert('شكرًا لتسجيلك معنا.');
+        window.location='index.html';
+</script>";
     
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
 }
  
 // close connection
 mysqli_close($link);
 ?>
 
-<script>alert('شكرًا لتسجيلك معنا.');
-        window.location="index.html";
-</script>
+
 
 </body>
 
