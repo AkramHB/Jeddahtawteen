@@ -8,15 +8,17 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  
+   
   
    <style>
 
      /* config.css */
 
 /* helpers/align.css */
-
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+* {
+    font-family: 'Droid Arabic Kufi', serif !important;
+}
 .align {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -89,7 +91,7 @@ html {
 body {
   background-color: #777;
   color: #606468;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Droid Arabic Kufi', serif !important;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 400;
