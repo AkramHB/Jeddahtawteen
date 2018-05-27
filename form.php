@@ -83,7 +83,7 @@
                         	<div class="form-top" style="background-color:#f1eff0;">
                         		<div class="form-top-left">
                         			<h3>الدخول إلى حسابك</h3>
-                            		<p>Enter your username and password to log on:</p>
+                            		<p>فضلا أدخل اسم المستخدم والرقم السري الخاص بك:</p>
                         		</div>
                         		<div class="form-top-right">
 <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/logout-64.png">                        		</div>
