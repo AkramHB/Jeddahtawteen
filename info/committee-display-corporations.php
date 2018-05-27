@@ -52,7 +52,7 @@
     
         <div class = "container"><ul class="nav nav-tabs nav-fill mt-5">
               <li class="nav-item">
-                <a class="nav-link" href="display-individuals.php">أفراد</a>
+                <a class="nav-link" href="committee-display-individuals.php">أفراد</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">مؤسسات</a>
@@ -63,7 +63,6 @@
     
             error_reporting(0);
             session_start();
-            if($_SESSION["privilege"] == "admin"){
 
             $servername = "localhost";
             $username = "akram";
@@ -90,8 +89,8 @@
 
             if ($result->num_rows > 0) {
 
-                echo "<div class = 'container text-center mt-5'><table class = 'table table-sm table-hover table-responsive text-center'>
-                    <thead class='thead-light'><tr><th scope='col'>ID #</th><th scope='col'>اسم الشركة</th><th scope='col'>اسم ممثل الشركة</th><th scope='col'>المسمى الوظيفي لممثل الشركة</th><th scope='col'>مجال الشركة</th><th scope='col'>الوظائف الشاغرة</th><th scope='col'>معلومات أكثر</th><th scope='col'>العنوان</th><th scope='col'>البريد الإلكتروني</th><th scope='col'>رقم الجوال</th><th scope='col'>رقم الهاتف</th></tr></thead>";
+                echo "<div class = 'container-fluid text-center mt-5'><table class = 'table table-sm table-hover table-responsive text-center'>
+                    <thead class='thead-light'><tr><th scope='col'>ID #</th><th scope='col'>اسم الشركة</th><th scope='col'>اسم ممثل الشركة</th><th scope='col'>المسمى الوظيفي لممثل الشركة</th><th scope='col'>مجال الشركة</th><th scope='col'>الوظائف الشاغرة</th><th scope='col'>معلومات أكثر</th><th scope='col'>العنوان</th><th scope='col'>البريد الإلكتروني</th><th scope='col'>رقم الجوال</th><th scope='col'>رقم الهاتف</th><th scope='col'>حالة الطلب</th></tr></thead>";
 
                 while($row = $result->fetch_assoc()) {
                     echo "<tr class=''>
@@ -105,18 +104,33 @@
                     <td>" . $row['address'] . "
                     <td>" . $row['email'] . "
                     <td>" . $row['mobile'] . "
-                    <td>" . $row['phone'] . "
-                    </tr>";
+                    <td>" . $row['phone'];
+                    if($row['status'] == '') {
+                        echo "<td><div class='dropdown'>
+                        <button class='btn btn-secondary dropdown-toggle' type='button' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                          حالة الطلب
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
+                          <a class='dropdown-item' href='request-corporations.php?command=complete&id=" . $row['id'] . "'>مكتمل</a>
+                          <a class='dropdown-item' href='request-corporations.php?command=incomplete&id=" . $row['id'] . "'>غير مكتمل</a>
+                          <a class='dropdown-item' href='request-corporations.php?command=decline&id=" . $row['id'] . "'>مرفوض</a>
+                        </div>
+                      </div>";
+                     }
+
+                     else {
+                        echo "<td>" . $row['status'];
+                     }
+                    
+                    echo "</tr>";
                 }
             } else {
                 echo "<div class = 'my-5 text-center display-3'>لا توجد هناك نتائج حاليًا</div>";
             }
             $MySQL_Handle->close();
-            }
+            
 
-            else{
-             echo "<div class = 'my-5 text-center display-3'>لست مصرح بالدخول هنا.</div>";
-            }
+            
 
 
 
@@ -128,11 +142,11 @@
       <div class = "container my-5">
          <div class = "row justify-content-between">
             <div class = "col-3 order-2">                     
-                <a class = "btn btn-default btn-success" style = "background-color: #466653; color: #d8b92b;" href="display-corporations.php?page=<?php echo $page + 1; ?>">الصفحة التالية</a>
+                <a class = "btn btn-default btn-success" style = "background-color: #466653; color: #d8b92b;" href="committee-display-corporations.php?page=<?php echo $page + 1; ?>">الصفحة التالية</a>
             </div>
             <div class = "col-3 order-1">
                 <?php if ($page != 1) { ?>
-                    <a class = "btn btn-default btn-success" style = "background-color: #466653; color: #d8b92b;" href="display-corporations.php?page=<?php echo $page - 1; ?>">الصفحة السابقة</a>
+                    <a class = "btn btn-default btn-success" style = "background-color: #466653; color: #d8b92b;" href="committee-display-corporations.php?page=<?php echo $page - 1; ?>">الصفحة السابقة</a>
                 <?php } ?>
             </div>
         </div>

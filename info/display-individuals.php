@@ -84,7 +84,7 @@
               else {
                 $page = $_GET['page'];
               }
-              $items = 20; 
+              $items = 100; 
               $offset = ($page * $items) - $items;
             $sql = "SELECT * FROM individuals LIMIT $items OFFSET $offset";
             $result = $MySQL_Handle->query($sql);

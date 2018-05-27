@@ -54,7 +54,7 @@
          if($_POST["username"] == "admin" && $_POST["password"] == "0550496601"){
             $_SESSION["privilege"] = "admin";
             echo '<script type="text/javascript">' . "\n"; 
-            echo 'window.location="display-individuals.php";'; 
+            echo 'window.location="info/committee-display-individuals.php";'; 
             echo '</script>';
          }
 
