@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap Login Form Template</title>
+        <title>البرنامج التدريبي لتوطين الوظائف بمحافظة جدة-منصة التقييم</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
@@ -35,8 +35,9 @@
 * {
     font-family: 'Droid Arabic Kufi', serif !important;
 }
-
-</style>
+ html, body {
+            overflow-x: hidden;
+          }</style>
 
 
 
@@ -79,14 +80,13 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 form-box">
-                        	<div class="form-top">
+                        	<div class="form-top" style="background-color:#f1eff0;">
                         		<div class="form-top-left">
                         			<h3>الدخول إلى حسابك</h3>
                             		<p>Enter your username and password to log on:</p>
                         		</div>
                         		<div class="form-top-right">
-                        			<i class="fa fa-lock"></i>
-                        		</div>
+<img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/logout-64.png">                        		</div>
                             </div>
                             <div class="form-bottom">
 			                    <form role="form" action="" method="post" class="login-form">
@@ -98,7 +98,7 @@
 			                        	<label class="sr-only" for="password">Password</label>
 			                        	<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="password">
 			                        </div>
-			                        <button type="submit" class="btn">Sign in!</button>
+			                        <button type="submit" class="btn" style="background-color:#426853; color:#caae27;"> Sign in!</button>
 			                    </form>
 		                    </div>
                         </div>
