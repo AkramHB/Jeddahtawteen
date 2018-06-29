@@ -115,13 +115,15 @@ $sql = "INSERT INTO confirm (name,idnum, mobilenum,email ) VALUES ('$name', '$id
 if(mysqli_query($link, $sql)){
     
     $to = $email;
-    $subject = 'تم تأكيد طلب التدريب في البرنامج التدريبي بمحافظة جدة بنجاح';
-    $text = 'عزيزي ' .  $name . "<br>";
-    $text .= 'لقد تم تسجيلكم في برنامج جدة توطين ' . "<br>";
+    $subject = 'تم تأكيد طلب التدريب في البرنامج التدريبي لتوطين الوظائف بمحافظة جدة بنجاح';
+    $text = 'عزيزي/عزيزتي  ' .  $name . "<br>";
+    $text .= ' تم تأكيد موعد المقابلة ' . "<br>";
     $text .= 'بيانات طلبكم كالاتي: ' . "<br>";
     $text .= 'الاسم ' .  $name . "<br>";
     $text .= 'البريد الالكتروني ' .  $email . "<br>";
-    $text .= 'رقم الجوال ' .  $mobile . "<br>";
+    $text .= 'رقم الجوال ' .  $mobile . "<br><br> jeddahtawteen.org<br>
+    
+    ";
 
 
 
