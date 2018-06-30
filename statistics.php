@@ -110,8 +110,11 @@
                     <div class = 'container'>
                         <div class = 'row'>
                             <div class = 'col-12 text-right mt-5'>
-                                 <h1 class = 'display-4 text-center'>المجموع الكلي للمتقدمين<h1> 
+                                 <h2 class = 'display-4 text-center'>المجموع الكلي للمتقدمين حتى الآن <h2> 
+                                 <img class = 'img-fluid mt-5' src = 'assets/images/team.png'>
+
                             </div>
+                            <br>
                             <div class = 'col-12 text-center mt-5'>
                                 <h1 class='text-center'>" . $NoR . "  </h1>
                             </div>
@@ -145,12 +148,14 @@
                     <div class = 'container text-center'>
                         <div class = 'row'>
                             <div class = 'col-12 text-right mt-5'>
-                                <h1 class = 'display-4 text-center'>مجموع الشركات<h1>
-                            </div>
+                                <h2 class = 'display-4 text-center'>مجموع الشركات<h2>
+                                <img class = 'img-fluid mt-5' src = 'assets/images/building.png'>
+
+                            </div> <br>
                             <div class = 'col-12'>
-                                <h1 class = 'display-5 mt-3 text-center'>" . $NoC . " شركة ومؤسسة </h1>
+                                <h2 class = 'display-5 mt-3 text-center'>" . $NoC . " شركة ومؤسسة </h2>
                             </div>
-                        </div>
+                        </div> <br>
                     </div>
                 ";
 
