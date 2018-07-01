@@ -65,6 +65,8 @@
             session_start();
     
 
+            if($_SESSION["privilege"] == "committe"){
+
             $servername = "localhost";
             $username = "akram";
             $password = "K8XG-3Dd=%-S";
@@ -137,6 +139,14 @@
                 echo "<div class = 'my-5 text-center display-3'>لا توجد هناك نتائج حاليًا</div>";
             }
             $MySQL_Handle->close();
+
+        }
+
+        else {
+            echo "<div class = 'container text-center'><div class='alert alert-danger' role='alert'>
+                غير مصرح لك بالدخول هنا
+          </div></div>";
+        }
             
 
 

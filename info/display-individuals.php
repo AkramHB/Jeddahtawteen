@@ -123,8 +123,10 @@
             $MySQL_Handle->close();
             }
 
-            else{
-             echo "<div class = 'my-5 text-center display-3'>لست مصرح بالدخول هنا.</div>";
+            else {
+                echo "<div class = 'container text-center'><div class='alert alert-danger' role='alert'>
+                    غير مصرح لك بالدخول هنا
+              </div></div>";
             }
 
 

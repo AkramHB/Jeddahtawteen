@@ -64,6 +64,8 @@
             error_reporting(0);
             session_start();
 
+            if($_SESSION["privilege"] == "committe"){
+
             $servername = "localhost";
             $username = "akram";
             $password = "K8XG-3Dd=%-S";
@@ -129,7 +131,13 @@
             }
             $MySQL_Handle->close();
             
+        }
 
+        else {
+            echo "<div class = 'container text-center'><div class='alert alert-danger' role='alert'>
+                غير مصرح لك بالدخول هنا
+          </div></div>";
+        }
             
 
 

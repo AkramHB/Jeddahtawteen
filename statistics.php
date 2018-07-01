@@ -44,10 +44,10 @@
 
 <body style="background-color:#f2eff0 ;" dir="rtl">
 
-    <div>
-        <a href="http://jeddahtawteen.org"><img id="T1" class="img-fluid" style="padding-bottom: 0em;" src="../assets/images/header.jpg"></a>
- 
-    </div>
+<div>
+<img class="img-fluid d-none d-md-block" style="padding-bottom: 0em;" src="assets/images/header.jpg" >
+<img class="img-fluid d-block d-md-none" style="padding-bottom: 0em;" src="assets/images/headermobile.jpg" >
+</div>
     
     <?php
     
