@@ -42,7 +42,7 @@
 
 </head>
 
-<body style="background-color: #ffffff;" dir="rtl">
+<body style="background-color:#f2eff0 ;" dir="rtl">
 
     <div>
         <a href="http://jeddahtawteen.org"><img id="T1" class="img-fluid" style="padding-bottom: 0em;" src="../assets/images/header.jpg"></a>
@@ -110,13 +110,17 @@
                     <div class = 'container'>
                         <div class = 'row'>
                             <div class = 'col-12 text-right mt-5'>
-                                 <h2 class = 'display-4 text-center'>المجموع الكلي للمتقدمين حتى الآن <h2> 
-                                 <img class = 'img-fluid mt-5' src = 'assets/images/team.png'>
+                                 <h3 class = 'display-4 text-center' style='color:#a79024;'>المجموع الكلي للمتقدمين حتى الآن <h3> 
 
+                            </div>
+
+                            <div class = 'col-12 text-center'> 
+                            
+                            <img class = 'img-fluid text-center mt-5' src = 'assets/images/team.png'>
                             </div>
                             <br>
                             <div class = 'col-12 text-center mt-5'>
-                                <h1 class='text-center'>" . $NoR . "  </h1>
+                                <h1 class='text-center'style='font-weight: bold; color:#466653'>" . $NoR . "  </h1>
                             </div>
                         </div>
                     </div>
@@ -135,26 +139,30 @@
                                 <img class = 'img-fluid mt-5' src = 'assets/images/girl.png'>
                             </div>
                             <div class = 'col-6'>
-                                <h1 class = 'display-5 mt-3'>" . $NoM . "</h1>
+                                <h1 class = 'display-5 mt-3' style='color:#466653;'>" . $NoM . "</h1>
                             </div>
                             <div class = 'col-6'>
-                                <h1 class = 'display-5 mt-3'>" . $NoF . "</h1>
+                                <h1 class = 'display-5 mt-3' style='color:#466653;'>" . $NoF . "</h1>
                             </div>
                         </div>
                     </div>
                 ";
 
-                echo "
+                echo " <br>
                     <div class = 'container text-center'>
                         <div class = 'row'>
                             <div class = 'col-12 text-right mt-5'>
-                                <h2 class = 'display-4 text-center'>مجموع الشركات<h2>
-                                <img class = 'img-fluid mt-5' src = 'assets/images/building.png'>
+                                <h3 class = 'display-4 text-center  'style='color:#a79024;'>مجموع الشركات<h3>
+                                
 
-                            </div> <br>
+                            </div> 
                             <div class = 'col-12'>
-                                <h2 class = 'display-5 mt-3 text-center'>" . $NoC . " شركة ومؤسسة </h2>
+                            <img class = 'img-fluid text-center mt-5' src = 'assets/images/building.png'>
                             </div>
+                            <br>
+                            <div class = 'col-12'>
+                                <h1 class = 'display-5 mt-3 text-center' style='font-weight: bold; color:#466653;'>" . $NoC . "  </h1>
+                            </div> <br>
                         </div> <br>
                     </div>
                 ";
