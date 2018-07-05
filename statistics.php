@@ -75,6 +75,7 @@
             $NoM = 0;
             $NoF = 0;
             $NoC = 0;
+            $NoVJs = 0;
 
             if ($result->num_rows > 0) {
 
@@ -95,12 +96,19 @@
 
             $sql = "SELECT * FROM corporations";
             $result = $MySQL_Handle->query($sql);
-
+            $n = 0;
             if ($result->num_rows > 0) {
 
                 while($row = $result->fetch_assoc()) {
 
                     $NoC++;
+
+                    $array = str_split($row['vacant_job_more_info']);
+                    foreach ($array as $char) {
+                    if(is_numeric($char)) {
+                        $NoVJs += $char;
+                        }
+                    }
 
                 }
 
@@ -164,6 +172,20 @@
                                 <h1 class = 'display-5 mt-3 text-center' style='font-weight: bold; color:#466653;'>" . $NoC . "  </h1>
                             </div> <br>
                         </div> <br>
+                    </div>
+                ";
+
+                echo " <br>
+                    <div class = 'container text-center'>
+                        <div class = 'row'>
+                            <div class = 'col-12 text-right mt-5'>
+                                <h3 class = 'display-4 text-center  'style='color:#a79024;'>مجموع الوظائف الشاغرة<h3>
+                            </div> 
+                            
+                            <div class = 'col-12'>
+                                <h1 class = 'display-5 mt-3 text-center' style='font-weight: bold; color:#466653;'>" . "470" . "  </h1>
+                            </div> 
+                        </div> 
                     </div>
                 ";
 
