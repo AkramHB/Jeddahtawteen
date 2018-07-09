@@ -3,59 +3,46 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="description" content="برنامج محافظة جدة لتوطين الوظائف">
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Mobirise v4.5.0, mobirise.com">
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-
-    <title> بوابة التسجيل</title>
-    <link rel="stylesheet" href="assets/et-line-font-plugin/style.css">
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/tether/tether.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/socicon/css/socicon.min.css">
-    <link rel="stylesheet" href="assets/dropdown/css/style.css">
-    <link rel="stylesheet" href="assets/theme/css/style.css">
-    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-    <script src="assets/web/assets/jquery/jquery.min.js"></script>
-    <script src="assets/tether/tether.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/smooth-scroll/SmoothScroll.js"></script>
-    <script src="assets/dropdown/js/script.min.js"></script>
-    <script src="assets/theme/js/script.js"></script>
-    <script src="assets/theme/js/slick.min.js"></script>
+<meta charset="UTF-8">
+<meta name="description" content="برنامج محافظة جدة لتوطين الوظائف">
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+<title> برنامج محافظة جدة لتوطين الوظائف</title>
+
+<style>
+    
+    @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+* {
+    font-family: 'Droid Arabic Kufi', serif !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+        
+    
 
 
-    <!-- -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-
-
-    <!-- -->
-
-    <script src="assets/countdown/jquery.countdown.min.js"></script>
-
-
-
-    <!-- popup -->
-
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    </style>
 
 
 </head>
 
-<body>
+<body dir = "rtl">
 
 
 <?php
@@ -204,9 +191,48 @@ if(mysqli_query($link, $sql)){
         // دالة الإرسال
         sendSMS($myMobile, $password, $numbers, $sender, $msg, $MsgID, $timeSend, $dateSend, $deleteKey, $resultType);
 
-        echo "<script>alert('شكرًا لتسجيلك معنا.');
-        window.location='index.html';
-</script>";
+        echo "<div>
+             <a href='http://jeddahtawteen.org'><img class='img-fluid' style='padding-bottom: 0em;' src='../assets/images/header.jpg'></a>
+        </div>";
+
+        echo "<div class = 'container text-center my-5'><div class='alert alert-success' role='alert'>
+                شكرًا لتسجيلكم معنا٬ من فضلك الرجاء الاطلاع على الجدول المخصص لكم
+              </div></div>";
+
+       /* echo "<div class = 'container text-center mt-5'>مواعيد الرسائل (رجال)
+            <table class = 'table table-striped table-hover table-responsive text-center'>
+            <thead class='thead-light'><tr><th scope='col'>م</th><th scope='col'>التاريخ</th><th scope='col'>نوع الرسالة</th><th scope='col'>الوسيلة</th><th scope='col'>المرسل إليهم</th></tr></thead>
+            <tr><th scope='row'>1</th><td>24-10-1439</td><td>اخبار بموعد المقابلات</td><td>نصية - جوال</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>2</th><td>24-10-1439</td><td>اخبار بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>3</th><td>25-10-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>4</th><td>26-10-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>5</th><td>27-10-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>6</th><td>28-10-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>7</th><td>2-11-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>8</th><td>3-11-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>9</th><td>4-11-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>10</th><td>5-11-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            </table>
+        </div>";*/
+
+        /* echo "<div class = 'container text-center mt-5'>مواعيد الرسائل (رجال)
+            <table class = 'table table-striped table-hover table-responsive text-center'>
+            <thead class='thead-light'><tr><th scope='col'>م</th><th scope='col'>التاريخ</th><th scope='col'>نوع الرسالة</th><th scope='col'>الوسيلة</th><th scope='col'>المرسل إليهم</th></tr></thead>
+            <tr><th scope='row'>1</th><td>24-10-1439</td><td>اخبار بموعد المقابلات</td><td>نصية - جوال</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>2</th><td>24-10-1439</td><td>اخبار بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>3</th><td>25-10-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>4</th><td>26-10-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>5</th><td>27-10-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>6</th><td>28-10-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>7</th><td>2-11-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>8</th><td>3-11-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>9</th><td>4-11-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            <tr><th scope='row'>10</th><td>5-11-1439</td><td>تذكيرية بموعد المقابلات</td><td>البريد الالكتروني</td><td>جميع المسجلين في المنصه</td></tr>
+            </table>
+        </div>";*/
+
+        echo "<div class = 'container text-center'><a class='btn btn-lg text-center' href='#' role='button' style = 'color: #d8b92b; background-color: #466653;'>العودة إلي الصفحة الرئيسية</a></div>";
+
     
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
