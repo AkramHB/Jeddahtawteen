@@ -183,7 +183,7 @@
                             </div> 
                             
                             <div class = 'col-12'>
-                                <h1 class = 'display-5 mt-3 text-center' style='font-weight: bold; color:#466653;'>" . "470" . "  </h1>
+                                <h1 class = 'display-5 mt-3 text-center' style='font-weight: bold; color:#466653;'>" . "520" . "  </h1>
                             </div> 
                         </div> 
                     </div>
