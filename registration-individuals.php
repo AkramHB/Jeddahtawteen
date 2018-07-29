@@ -197,6 +197,7 @@ if(mysqli_query($link, $sql)){
 
         $sentence = '';
         $link = '';
+        $features='http://jeddahtawteen.org/features.html';
         if($gender == 'male'){
             $sentence = 'المقابلات الشخصية للبرنامج التدريبي سوف تكون من يوم الاثنين ٢٤ ذو القعدة ١٤٣٩ هـ يوم الاثنين ٢ ذو الحجة ١٤٣٩ هـ يوميا من الساعة 10 صباحا الى ١ ظهرا  بمقر  البرنامج التدريبي لتوطين الوظائف بفرع جامعة جدة في الفيصلية ( بنين) 
             ) 
@@ -213,7 +214,7 @@ if(mysqli_query($link, $sql)){
         }
 
         echo "<div class = 'container text-center my-5'><div class='alert alert-success' role='alert'>
-                شكرًا لتسجيلكم معنا٬ من فضلك الرجاء الاطلاع على الجدول المخصص لكم <br> " . $sentence . "<br> <a href = '" . $link . "'>الموقع </a>   
+                شكرًا لتسجيلكم معنا٬ من فضلك الرجاء الاطلاع على الجدول المخصص لكم <br> " . $sentence . "<br> <a href = '" . $link . "'>الموقع </a>   <br> وللإطلاع على مميزات الشركات الموظفة يمكنك زيادر الرابط التالي: <br> <a href='".$features."'> رابط المميزات </a> <br>
               </div></div>";
 
        /* echo "<div class = 'container text-center mt-5'>مواعيد الرسائل (رجال)
