@@ -125,9 +125,9 @@ $sql = "INSERT INTO individuals (name, gender, birthdate, identity, address, ema
 if(mysqli_query($link, $sql)){
     
     $to = $email;
-    $subject = 'تم تسجيلكم في برنامج جدة توطين';
+    $subject = 'البرنامج التدريبي لتوطين الوظائف بمحافظة جدة  ';
     $text = 'عزيزي ' .  $name . "<br>";
-    $text .= 'لقد تم تسجيلكم في برنامج جدة توطين ' . "<br>";
+    $text .= 'لقد تم تسجيلكم بنجاح في البرنامج التدريبي لتوطين الوظائف بمحافظة جدة ' . "<br>";
     $text .= 'بيانات طلبكم كالاتي: ' . "<br>";
     $text .= 'الاسم ' .  $name . "<br>";
     $text .= 'البريد الالكتروني ' .  $email . "<br>";
@@ -214,8 +214,8 @@ if(mysqli_query($link, $sql)){
         }
 */
         echo "<div class = 'container text-center my-5'><div class='alert alert-success' role='alert'>
-        عزيزي المتقدم شكرا لتسجيلكم معنا.. تم تأكيد طلبكم وإرسال رسالة تأكيد لبريدكم الإلكتروني  ) 
-        )               </div></div>";
+        عزيزي المتقدم شكرا لتسجيلكم معنا.. تم تأكيد طلبكم وإرسال رسالة تأكيد لبريدكم الإلكتروني  
+                      </div></div>";
 
        /* echo "<div class = 'container text-center mt-5'>مواعيد الرسائل (رجال)
             <table class = 'table table-striped table-hover table-responsive text-center'>
@@ -249,7 +249,7 @@ if(mysqli_query($link, $sql)){
             </table>
         </div>";*/
 
-        echo "<div class = 'container text-center'><a class='btn btn-lg text-center' href='#' role='button' style = 'color: #d8b92b; background-color: #466653;'>العودة إلي الصفحة الرئيسية</a></div>";
+        echo "<div class = 'container text-center'><a class='btn btn-lg text-center' href='http://www.jeddahtawteen.org/' role='button' style = 'color: #d8b92b; background-color: #466653;'>العودة إلي الصفحة الرئيسية</a></div>";
 
     
 } else{
